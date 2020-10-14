@@ -2,11 +2,11 @@ package com.example.springboot101.repositories;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.springboot101.models.User;
-import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import com.example.springboot101.entities.UserEntity;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
-public interface UserRepository extends MongoRepository<User, ObjectId>{
+public interface UserRepository extends JpaRepository<UserEntity, Long>{
     
 }
