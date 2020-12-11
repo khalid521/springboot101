@@ -26,16 +26,12 @@ public class UserController {
     public ResponseEntity<?> findAll() throws Exception
     {
         return ResponseEntity.ok(userService.findAll());
-
     }
 
     @RequestMapping(value = {"/insert"}, method = RequestMethod.POST)
     public ResponseEntity<?> insertOne(@RequestBody User user) throws Exception
     {
-
-    
         return ResponseEntity.ok(userService.insertOne((user)));
-
     }
     
 }
