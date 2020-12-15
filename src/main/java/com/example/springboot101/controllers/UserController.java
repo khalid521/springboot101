@@ -33,5 +33,10 @@ public class UserController {
     {
         return ResponseEntity.ok(userService.insertOne((user)));
     }
-    
+
+    @RequestMapping(value = {"/ping"}, method = RequestMethod.GET)
+    public ResponseEntity<?> ping() throws Exception
+    {
+        return ResponseEntity.ok("Ping!");
+    }
 }
