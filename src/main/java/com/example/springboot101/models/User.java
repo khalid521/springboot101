@@ -34,6 +34,7 @@ public class User implements Serializable {
         this.name = user.getName();
     }
     
+
     @JsonSerialize(using = ToStringSerializer.class)
     @Id
     private String id;

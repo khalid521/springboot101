@@ -28,6 +28,17 @@ public class UserController {
         return ResponseEntity.ok(userService.findAll());
     }
 
+    @RequestMapping(value = {"/add"}, method = RequestMethod.GET)
+    public ResponseEntity<?> insertOne1() throws Exception
+    {
+
+        User user  = new User();
+        user.setName("Khalid");
+        user.setId("100");
+
+        return ResponseEntity.ok(userService.insertOne((user)));
+    }
+
     @RequestMapping(value = {"/insert"}, method = RequestMethod.POST)
     public ResponseEntity<?> insertOne(@RequestBody User user) throws Exception
     {
