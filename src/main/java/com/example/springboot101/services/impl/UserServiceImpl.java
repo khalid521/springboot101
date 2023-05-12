@@ -22,8 +22,15 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public Iterable<UserEntity> findAll() {
-        return userRepository.findAll();
+    public List<User> findAll() {
+      List<UserEntity> userEntities = userRepository.findAll();
+      List<User> users = new ArrayList<User>();
+
+        for (UserEntity userEntity : userEntities) {
+        users.add(new User(userEntity.getId(), userEntity.getName(), userEntity.getPassword()));
+        }
+       return users;
+      
     }
 
     @Override
