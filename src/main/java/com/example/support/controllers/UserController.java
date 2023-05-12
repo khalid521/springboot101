@@ -50,6 +50,14 @@ public class UserController {
         User user  = new User();
         user.setName("Khalid");
         user.setId("100");
+        userService.insertOne(user);
+        user  = new User();
+        user.setName("Mohammed");
+        user.setId("100");
+        userService.insertOne(user);
+        user  = new User();
+        user.setName("Yasser");
+        user.setId("100");
 
         return ResponseEntity.ok(userService.insertOne((user)));
     }
