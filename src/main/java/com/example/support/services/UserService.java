@@ -1,8 +1,8 @@
-package com.example.springboot101.services;
+package com.example.support.services;
 
 import java.util.List;
 
-import com.example.springboot101.models.User;
+import com.example.support.models.User;
 
 public interface UserService {
 

@@ -1,4 +1,4 @@
-package com.example.springboot101.configs;
+package com.example.support.configs;
 
 import org.springframework.context.annotation.Configuration;
 

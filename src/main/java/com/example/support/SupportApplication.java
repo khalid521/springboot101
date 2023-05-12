@@ -1,14 +1,14 @@
-package com.example.springboot101;
+package com.example.support;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 //@Configuration
-public class Springboot101Application {
+public class SupportApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Springboot101Application.class, args);
+		SpringApplication.run(SupportApplication.class, args);
 	}
 
 }

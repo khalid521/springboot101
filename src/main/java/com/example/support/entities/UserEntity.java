@@ -1,11 +1,11 @@
-package com.example.springboot101.entities;
+package com.example.support.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.example.springboot101.models.User;
+import com.example.support.models.User;
 
 // import org.springframework.data.mongodb.core.mapping.Document;
 

@@ -1,4 +1,4 @@
-package com.example.springboot101.models;
+package com.example.support.models;
 
 import java.io.Serializable;
 
@@ -6,7 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import com.example.springboot101.entities.UserEntity;
+import com.example.support.entities.UserEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;

@@ -1,12 +1,12 @@
-package com.example.springboot101.services.impl;
+package com.example.support.services.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.springboot101.entities.UserEntity;
-import com.example.springboot101.models.User;
-import com.example.springboot101.repositories.UserRepository;
-import com.example.springboot101.services.UserService;
+import com.example.support.entities.UserEntity;
+import com.example.support.models.User;
+import com.example.support.repositories.UserRepository;
+import com.example.support.services.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
